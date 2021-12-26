@@ -9,9 +9,10 @@ class Compressor:
         PARAMETERS
         name: (str) name of the unit for identification
         stream: Stream class instance, specifying the fluid which compressor is need to process
-        discharge_pres(Pa): discharge pressure that is required of the compressor
-        pressure_ratio: ratio of discharge to suction pressure
-        isentropic (boolean): True if compression is to be assumed isentropic, false for polytropic compression
+        Optional discharge_pres(Pa): discharge pressure that is required of the compressor
+        Optional pressure_ratio: ratio of discharge to suction pressure
+        * Either pressure ratio of discharge pressure has to be specified
+        OPtional isentropic (boolean): True if compression is to be assumed isentropic, false for polytropic compression
         ----------------------------------------
         ATTRIBUTES
         name: name of unit
